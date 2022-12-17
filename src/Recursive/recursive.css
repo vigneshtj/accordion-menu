@@ -1,0 +1,78 @@
+.simple{
+    background: #5c7185;
+    height: 100vh;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .accordion-menu{
+    position: absolute;
+    top: 0;
+    width: 350px;
+    margin: 100px auto 20px 40px;
+    background: #242d41;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #000;
+    padding-left: 0;
+  }
+  
+  .dropdown{
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 45px;
+    font-size: 18px;
+    border-bottom: 2px solid #2d374d;
+    color: #999;
+    position: relative;
+    transition: all 0.4s ease-out;
+  }
+  
+  .accordion-menu li:last-child .dropdown{
+    border-bottom: 0;
+  }
+  
+  .dropdown:hover{
+    background: #566f82;
+    background: -webkit-gradient(linear,0% 0% 0% 100%, from(#27455c), to(#273a47));
+  }
+  
+  .downIcon{
+    font-size: 10px;
+    font-weight:900;
+    right: 12px;
+    left: auto;
+    transition: transform 0.2s ease-in-out;
+    position: absolute;
+  }
+  
+  .submenuitems{
+    background: #2d374d;
+    display: none
+  
+  }
+  
+  .accordion-menu li.active .submenuitems{
+    display: block;
+  }
+  
+  .accordion-menu li.active .dropdown{
+    color: #fff;
+  }
+  
+  .accordion-menu li.active .dropdown .downIcon{
+    transform: rotate(180deg);
+  }
+  
+  .submenuitems a{
+    display: block;
+    color: #66b2ff;
+    font-weight: 600;
+    padding: 12px 12px 12px 45px;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+  }
+  
+  
